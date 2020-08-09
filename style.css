@@ -1,0 +1,345 @@
+*{
+    box-sizing:border-box;
+}
+body {
+    background-color:#2F2F2F;
+   
+
+}
+.foodpage {
+    margin:50px 20px 50px 20px;;
+
+    background-color:white;
+    padding:4% 4% 4% 4%;
+}
+/* leftmenustylestarts */
+.leftmenu{
+   
+    width:15%;
+    height:100%;
+    float:left;
+    position:relative;
+    padding-right:4%;   
+}
+
+.clearfix::after {
+    content:"";
+    display:table;
+    clear:both;
+}
+
+.logo {
+    display:block;
+    position:relative;
+  
+    
+}
+.logo img {
+    border:2px solid ;
+    border-radius:50%;
+    text-align:center;
+    
+}
+
+.nav ul{
+     list-style-type: none;
+     padding:0px;
+     
+}
+.nav li {
+    margin:0;
+    padding:0.5em 0;
+    text-align:left;
+    font-size: 1.2em;   
+}
+.nav li a::before{
+    content:"   ";
+}
+.nav li a {
+    text-decoration:none;
+    text-justify: auto;
+    color:#05AC72;
+    padding-left:auto;
+    padding-right:auto;     
+}
+.nav li a:hover{
+    color:#056644;
+}
+.lfcfirst button {
+    color:#05AC72;
+    background-color: white;
+    font-size:1em;
+    width:100%;
+    padding:2px;
+    border-radius:4px;
+    cursor:pointer;
+    margin:0 auto;
+    position:relative;
+}
+.lfcfirst button:hover {
+    background-color:rgb(209, 235, 227);
+    color:rgb(23, 182, 145);
+}
+.lfcfirst span {
+    color:#05AC72;
+}
+/* leftmenustyleends */
+/* maincontentstylestarts */
+.maincontent{
+    width:85%;
+    float:left;
+    position:relative;   
+}
+/* backgrounstylestarts */
+.backgroundimage{
+    width: 100%;
+    height: 500px;
+}
+.backgroundimage img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.background {
+    position: relative;
+    top: -40%;
+    
+}
+.background h2{
+    margin:0;
+}
+.food {
+    background-color:white;
+    padding:1%;
+    font-size:1.8em;
+    border-radius:3px;
+    width: 50%;
+}
+
+.food1 {
+    background-color:#2F2F2F;
+    color:white;
+    font-size:1.2em;
+    padding:0.5%;
+    border-radius:3px;
+    width: 65%;
+}
+/* backgroundstyleends */
+/* itemsstylestarts */
+.items {
+    position:relative;;
+}
+.btn{
+    color:#05AC72;
+    display:block;
+    background-color: rgb(223, 233, 231);
+    margin:0;
+    padding:0;
+    width:25%;
+    float:left;
+    font-size:1em;
+    padding:10px;
+    border:none;
+    margin-top:2px;
+}
+.active, .btn:hover {
+    background-color: rgb(129, 214, 197);
+  }
+
+/* itemsstyleends */
+/* serachstylestarts */
+.search{
+    display:block;
+   
+}
+.searchbarbutton {
+    padding:20px;
+    float:left;
+    width:40%;    
+}
+.searchbarbutton input[type="text"]{
+    background-color: white;
+    border:1px solid black;
+    border-radius:2px;
+    padding:2px;
+    padding-left:10px;
+    font-size:1em;
+    width:70%;
+}
+.searchbarbutton button{
+    color:black;
+    padding:2px;;
+    cursor:pointer;
+    font-size:1em;
+    border-radius:4px;
+    width:29%;
+}
+.searchbarbutton button:hover{
+    background-color:rgb(153, 209, 190);
+    color:black;
+}
+.mailicon{
+    box-sizing: border-box;
+    float:left;
+    width:10%;
+    display:block;
+    padding:16px;
+    text-align:center;
+}
+.notification {
+    box-sizing: border-box;
+    float:left;
+    width:50%; 
+    text-align:left;
+    
+}
+/* searchstyleends */
+/* gallerystylestarts */
+.image{
+    float:left;
+    width:25%;
+    height:auto;
+    padding:0 7px 7px 7px;
+    display:block;
+    
+}
+.image img {
+    border:1px dotted black;
+    padding:1vw;
+    border-radius:5px;
+    width:100%;
+    margin:0 auto;
+    position:relative;
+    
+}
+.image h3 {
+    color:#05AC72;
+}
+.image span {
+    color:#05AC72;
+}
+/* gellerystyleends */
+
+
+/* footerstylestarts */
+.sociallinks {
+    float:right;
+    display:block;
+    position:relative;
+    top:25px;
+    margin-top:auto;
+    margin-bottom:auto;
+
+}
+.sociallinks a {
+    color:gray;
+    padding:2px;
+    
+}
+.copyrights {
+    float:left;
+    font-size:0.8em;   
+}
+.foodpage footer{
+    background-color: white;
+    
+}
+/* footerstyleends */
+
+
+  @media screen and (max-width: 770px) {
+      .leftmenu {
+          width:100%;
+          float:none;
+      }
+      .maincontent{
+          width:100%;
+          float:none;
+      }
+      .backgroundimage{ 
+          padding-top:2%;
+      }
+      .copyrights {
+        float:none;
+        text-align:center;
+      }
+      .mailicon{
+          width:25%
+
+      }
+      .notification {
+          width:75%;
+      }
+      
+      .searchbarbutton {
+        float:none;
+        width: 100%;
+        padding:10px;
+        
+        border-bottom:1px solid black;
+      }
+      .sociallinks {
+        float:none;
+        width:100%;
+        text-align: center;
+        margin-top:10px;
+       
+      }
+      .nav li {
+          padding:0.5em 35%;
+          font-size:1.2em;
+      }
+      .lfcfirst button, .items button {
+          font-size:0.8em;
+          overflow:hidden;
+      }
+      .logo{
+          padding:5% 35%;
+      }
+      .lfcfirst button {
+        width:50%;
+    }
+    .lfcfirst {
+        text-align:center;
+    }
+
+    .food{
+        font-size:1.2em;
+    }
+    .food1{
+        font-size:0.8em;
+    }
+
+  }
+
+  @media screen and (max-width: 500px) {
+    .nav li {
+        padding:0.5em 28%;
+    }
+    .logo{
+        padding:5% 28%;
+    }
+    .lfcfirst button {
+        width:50%;
+    }
+    .lfcfirst{
+        text-align:center;
+    }
+  }
+  @media screen and (max-width: 420px) {
+    .nav li {
+        padding:0.5em 25%;
+    }
+    .logo{
+        padding:5% 25%;
+    }
+    .subgallery {
+        float:none;
+        display:block;
+        width:100%;
+    }
+    
+
+  }
+  
+  
